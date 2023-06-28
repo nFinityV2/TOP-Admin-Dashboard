@@ -8,3 +8,74 @@
     font-weight: 400;
     box-sizing: border-box;
 }
+
+body {
+    display: grid;
+    grid-template-areas: "sidebar header header header"
+                         "sidebar projects projects announcements"
+                         "sidebar projects projects trending";
+}
+
+/* HEADER */
+.header {
+    grid-area: header;
+}
+
+/* SIDEBAR */
+.sidebar {
+    grid-area: sidebar;
+    display: inline-grid;
+    grid-template-rows: 75px 1fr 3fr;
+    grid-row-gap: 2.5em;
+    max-width: 80%;
+}
+
+.sidebar-title > img{
+    max-width: 3.25em;
+}
+
+.sidebar-title, .sidebar-item {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 0.25em 1em;
+}
+
+.sidebar-item > img {
+    max-width: 2em;
+}
+
+/* PROJECTS */
+.projects {
+    grid-area: projects;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+}
+
+.interactive-card {
+    display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+}
+
+.interactive-card > img {
+    max-width: 1.5em;
+}
+
+/* ANNOUNCEMENTS & TRENDING*/
+.announcements {
+    grid-area: announcements;
+}
+
+hr {
+    max-width: 75%;
+    margin: auto;
+}
+
+.trending {
+    grid-area: trending;
+}
