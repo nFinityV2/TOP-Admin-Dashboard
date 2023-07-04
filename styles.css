@@ -11,41 +11,78 @@
 
 body {
     display: grid;
-    grid-template-areas: "sidebar header header header"
-                         "sidebar projects projects announcements"
-                         "sidebar projects projects trending";
+    grid-template-areas: "sidebar header header"
+                         "sidebar content content"
+                         "sidebar content content";
 }
 
 /* HEADER */
 .header {
     grid-area: header;
+    box-shadow: 0px 5px 3px 1px #D3D3D3;
+    max-height: 200px;
 }
+
+.search > button > img, .profile > img {
+    max-width: 1.5em;
+}
+
 
 /* SIDEBAR */
 .sidebar {
+    background-color: #c026d3;
     grid-area: sidebar;
     display: inline-grid;
     grid-template-rows: 75px 1fr 3fr;
     grid-row-gap: 2.5em;
-    max-width: 80%;
+    max-width: 75%;
+}
+
+.sidebar-title > h1{
+    font-size: 1.7rem;
+    font-weight: 500;
 }
 
 .sidebar-title > img{
     max-width: 3.25em;
 }
 
+.sidebar-item > img {
+    max-width: 1.5em;
+}
+
+.sidebar-title, .sidebar-item {
+    filter: invert(1);
+}
+
+.sidebar-one, .sidebar-two {
+    padding-left: 0.7em;
+}
+
 .sidebar-title, .sidebar-item {
     display: flex;
     align-items: center;
     gap: 1em;
-    padding: 0.25em 1em;
+    padding: 0.75em 1em;
 }
 
-.sidebar-item > img {
-    max-width: 2em;
+.sidebar-item > h2 {
+    font-weight: 500;
+    font-size: 1.25rem;
+    letter-spacing: 0.5px;
 }
+
+
+
 
 /* PROJECTS */
+.content {
+    grid-area: content;
+    display: inline-grid;
+    grid-template-areas: "projects projects announcements"
+                         "projects projects trending";
+}
+
 .projects {
     grid-area: projects;
 }

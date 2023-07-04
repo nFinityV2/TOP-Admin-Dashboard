@@ -7,117 +7,143 @@
     <title>Admin Dashboard | The Odin Project</title>
   </head>
   <body>
-    <header class="header"></header>
+    <header class="header">
+      <div class="header-top">
+        <div class="search">
+          <button><img src="assets/magnify.svg" alt="search" /></button>
+          <input type="search" name="search" id="" />
+        </div>
+        <div class="profile">
+          <img src="assets/bell-ring.svg" alt="profile-notifs" />
+          <img class="profile-pic" src="" alt="profile-picture" />
+          <h3 class="profile-name">Aaron Fox</h3>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="banner">
+          <img src="" alt="" />
+          <p class="greeting">Hi there,</p>
+          <p class="greeting-two">Aaron Fox (@FoxAaronRacing)</p>
+        </div>
+        <div class="options">
+          <button class="btn-option">New</button>
+          <button class="btn-option">Upload</button>
+          <button class="btn-option">Share</button>
+        </div>
+      </div>
+    </header>
 
     <section class="sidebar">
       <div class="sidebar-title">
-        <img src="assets/view-dashboard-variant.png" alt="dashboard" />
+        <img src="assets/view-dashboard.svg" alt="dashboard" />
         <h1>Dashboard</h1>
       </div>
       <div class="sidebar-one">
         <div class="sidebar-item">
-          <img src="assets/home.png" alt="home" />
+          <img src="assets/home.svg" alt="home" />
           <h2>Home</h2>
         </div>
         <div class="sidebar-item">
-          <img src="assets/card-account-details-outline.png" alt="profile" />
+          <img src="assets/card-account-details.svg" alt="profile" />
           <h2>Profile</h2>
         </div>
         <div class="sidebar-item">
-          <img src="assets/message-reply.png" alt="messages" />
+          <img src="assets/message-reply.svg" alt="messages" />
           <h2>Messages</h2>
         </div>
         <div class="sidebar-item">
-          <img src="assets/history.png" alt="history" />
+          <img src="assets/history.svg" alt="history" />
           <h2>History</h2>
         </div>
         <div class="sidebar-item">
-          <img src="assets/text-box.png" alt="tasks" />
+          <img src="assets/text-box.svg" alt="tasks" />
           <h2>Tasks</h2>
         </div>
         <div class="sidebar-item">
-          <img src="assets/account-group.png" alt="communities" />
+          <img src="assets/account-group.svg" alt="communities" />
           <h2>Communities</h2>
         </div>
       </div>
       <div class="sidebar-two">
         <div class="sidebar-item">
-          <img src="assets/cog.png" alt="settings" />
+          <img src="assets/cog.svg" alt="settings" />
           <h2>Settings</h2>
         </div>
         <div class="sidebar-item">
-          <img src="assets/help-box.png" alt="support" />
+          <img src="assets/help-box.svg" alt="support" />
           <h2>Support</h2>
         </div>
         <div class="sidebar-item">
-          <img src="assets/shield-check.png" alt="privacy" />
+          <img src="assets/shield-check.svg" alt="privacy" />
           <h2>Privacy</h2>
         </div>
       </div>
     </section>
 
-    <main class="projects">
-      <h2>Your Projects</h2>
-      <div class="card-container">
-        <div class="project-card">
-          <h3>Project 1</h3>
-          <p>Test</p>
-          <div class="interactive-card">
-            <img src="assets/star-plus-outline.png" alt="favourite" />
-            <img src="assets/eye-plus-outline.png" alt="view" />
-            <img src="assets/share-variant-outline.png" alt="share" />
+    <main class="content">
+      <section class="projects">
+        <h2>Your Projects</h2>
+        <div class="card-container">
+          <div class="project-card">
+            <h3>Project 1</h3>
+            <p>Test</p>
+            <div class="interactive-card">
+              <img src="assets/star-plus.svg" alt="favourite" />
+              <img src="assets/eye-plus-outline.svg" alt="view" />
+              <img src="assets/share-variant.svg" alt="share" />
+            </div>
+          </div>
+
+          <div class="project-card">
+            <h3>Project 2</h3>
+            <p>Test</p>
+          </div>
+
+          <div class="project-card">
+            <h3>Project 3</h3>
+            <p>Test</p>
+          </div>
+
+          <div class="project-card">
+            <h3>Project 4</h3>
+            <p>Test</p>
+          </div>
+
+          <div class="project-card">
+            <h3>Project 5</h3>
+            <p>Test</p>
+          </div>
+
+          <div class="project-card">
+            <h3>Project 6</h3>
+            <p>Test</p>
           </div>
         </div>
+      </section>
 
-        <div class="project-card">
-          <h3>Project 2</h3>
-          <p>Test</p>
-        </div>
-
-        <div class="project-card">
-          <h3>Project 3</h3>
-          <p>Test</p>
-        </div>
-
-        <div class="project-card">
-          <h3>Project 4</h3>
-          <p>Test</p>
-        </div>
-
-        <div class="project-card">
-          <h3>Project 5</h3>
-          <p>Test</p>
-        </div>
-
-        <div class="project-card">
-          <h3>Project 6</h3>
-          <p>Test</p>
-        </div>
-      </div>
-    </main>
-
-    <aside class="announcements">
-      <h2>Announcements</h2>
-      <div class="announcements-feed">
-        <div class="item-announcements">
+      <aside class="announcements">
+        <h2>Announcements</h2>
+        <div class="announcements-feed">
+          <div class="item-announcements">
             <h4>Site Maintainence</h4>
             <p class="text-announcement">text</p>
+          </div>
+          <hr />
         </div>
-        <hr>
-      </div>
-    </aside>
+      </aside>
 
-    <aside class="trending">
-      <h2>Trending</h2>
-      <div class="trending-feed">
-        <div class="item-trending">
-            <img src="" alt="">
+      <aside class="trending">
+        <h2>Trending</h2>
+        <div class="trending-feed">
+          <div class="item-trending">
+            <img src="" alt="" />
             <div class="trending-desc">
-                <a href="#" class="handle">@generational</a>
-                <p class="trending-bio">Some guy</p>
+              <a href="#" class="handle">@generational</a>
+              <p class="trending-bio">Some guy</p>
             </div>
+          </div>
         </div>
-      </div>
-    </aside>
+      </aside>
+    </main>
   </body>
 </html>
