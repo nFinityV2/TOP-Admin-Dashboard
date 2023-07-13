@@ -11,6 +11,8 @@
 
 body {
     display: grid;
+    grid-template-columns: minmax(250px, 300px) 1fr;
+    grid-template-rows: minmax(175px, 190px) 1fr;
     grid-template-areas: "sidebar header header"
                          "sidebar content content"
                          "sidebar content content";
@@ -20,22 +22,105 @@ body {
 .header {
     grid-area: header;
     box-shadow: 0px 5px 3px 1px #D3D3D3;
-    max-height: 200px;
+    display: grid;
+    grid-template-areas: "search profile"
+                         "banner options";
 }
 
-.search > button > img, .profile > img {
-    max-width: 1.5em;
+.search { grid-area: search;}
+.profile { grid-area: profile;}
+
+.banner { 
+    grid-area: banner;
+    justify-content: flex-start;
+    margin-left: 9em;
 }
 
+.options { grid-area: options;}
+
+.search, .profile, .banner, .options {
+    display: flex;
+    align-items: center;
+}
+
+.search, .profile, .options {
+    justify-content: center;
+}
+
+.profile {
+    gap: 2em;
+}
+
+.profile-pic{
+    max-width: 3.25em;
+    border-radius: 30px;
+}
+
+.profile-name {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.search button, .profile button {
+    border: none;
+    background-color: inherit;
+    display: flex;
+    padding: 0 0.5em;
+}
+
+.search input {
+    border: none;
+    border-radius: 15px;
+    background-color: gainsboro;
+    padding: 0.25em 0;
+    width: 600px
+}
+
+.search button img, .profile button img {
+    max-width: 2em;
+}
+.profile img .profile-img {
+    max-width: 2.5em;
+}
+
+.banner img {
+    max-width: 5em;
+    border-radius: 40px;
+}
+
+.banner div {
+    margin: 1em;
+}
+
+div .greeting {
+    font-size: 0.9rem;
+}
+
+div .handle {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.options {
+    gap: 2em;
+}
+
+.options button {
+    background-color: #d946ef;
+    color: #ffff;
+    border: none;
+    padding: 1em 2em;
+    border-radius: 30px;
+    font-weight: 700;
+}
 
 /* SIDEBAR */
 .sidebar {
-    background-color: #c026d3;
     grid-area: sidebar;
-    display: inline-grid;
+    background-color: #c026d3;
+    display: grid;
     grid-template-rows: 75px 1fr 3fr;
     grid-row-gap: 2.5em;
-    max-width: 75%;
 }
 
 .sidebar-title > h1{
@@ -78,7 +163,9 @@ body {
 /* PROJECTS */
 .content {
     grid-area: content;
-    display: inline-grid;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: "projects projects announcements"
                          "projects projects trending";
 }
