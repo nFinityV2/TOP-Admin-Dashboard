@@ -7,7 +7,6 @@
     <title>Admin Dashboard | The Odin Project</title>
   </head>
   <body>
-
     <nav class="sidebar">
       <div class="sidebar-title">
         <img src="assets/view-dashboard.svg" alt="dashboard" />
@@ -56,36 +55,40 @@
     </nav>
 
     <header class="header">
-        <div class="search">
-          <button><img src="assets/magnify.png" alt="search" /></button>
-          <input type="search" name="search" id="" />
+      <div class="search">
+        <button><img src="assets/magnify.png" alt="search" /></button>
+        <input type="search" name="search" id="" />
+      </div>
+      <div class="profile">
+        <button><img src="assets/bell-ring.png" alt="profile-notifs" /></button>
+        <img
+          class="profile-pic"
+          src="assets/afoxf1.PNG"
+          alt="profile-picture"
+        />
+        <h3 class="profile-name">Aaron Fox</h3>
+      </div>
+      <div class="banner">
+        <img src="assets/afoxf1.PNG" alt="banner-pic" />
+        <div>
+          <h1 class="greeting">Hi there,</h1>
+          <h1 class="handle">Aaron Fox (@FoxAaronRacing)</h1>
         </div>
-        <div class="profile">
-          <button><img src="assets/bell-ring.png" alt="profile-notifs" /></button>
-          <img class="profile-pic" src="assets/afoxf1.PNG" alt="profile-picture" />
-          <h3 class="profile-name">Aaron Fox</h3>
-        </div>
-        <div class="banner">
-          <img src="assets/afoxf1.PNG" alt="banner-pic" />
-          <div>
-            <h1 class="greeting">Hi there,</h1>
-            <h1 class="handle">Aaron Fox (@FoxAaronRacing)</h1>
-          </div>
-        </div>
-        <div class="options">
-          <button>New</button>
-          <button>Upload</button>
-          <button>Share</button>
-        </div>
+      </div>
+      <div class="options">
+        <button>New</button>
+        <button>Upload</button>
+        <button>Share</button>
+      </div>
     </header>
 
     <main class="content">
       <section class="projects">
-        <h2>Your Projects</h2>
+        <h2>Your Feed</h2>
         <div class="card-container">
           <div class="project-card">
-            <h3>Project 1</h3>
-            <p>Test</p>
+            <h3>Peugeot Sport enters F1!</h3>
+            <p>Amid a massive push from the Stellantis Group, following their Sportscar program ...</p>
             <div class="interactive-card">
               <img src="assets/star-plus.svg" alt="favourite" />
               <img src="assets/eye-plus-outline.svg" alt="view" />
@@ -94,55 +97,117 @@
           </div>
 
           <div class="project-card">
-            <h3>Project 2</h3>
-            <p>Test</p>
+            <h3>de Vries cut from AlphaTauri, Ricciardo replaces him</h3>
+            <p>Vestibulum rhoncus nunc nisi, eu ultrices orci congue id...</p>
+            <div class="interactive-card">
+              <img src="assets/star-plus.svg" alt="favourite" />
+              <img src="assets/eye-plus-outline.svg" alt="view" />
+              <img src="assets/share-variant.svg" alt="share" />
+            </div>
           </div>
 
           <div class="project-card">
-            <h3>Project 3</h3>
-            <p>Test</p>
+            <h3>Toyota deny Ferrari Victory at 6hrs of Monza</h3>
+            <p>Morbi faucibus eros tristique egestas commodo... </p>
+            <div class="interactive-card">
+              <img src="assets/star-plus.svg" alt="favourite" />
+              <img src="assets/eye-plus-outline.svg" alt="view" />
+              <img src="assets/share-variant.svg" alt="share" />
+            </div>
           </div>
 
           <div class="project-card">
-            <h3>Project 4</h3>
-            <p>Test</p>
+            <h3>Lundgaard scores maiden victory in Toronto</h3>
+            <p>Integer dapibus ultricies dolor, ac pretium elit egestas et...</p>
+            <div class="interactive-card">
+              <img src="assets/star-plus.svg" alt="favourite" />
+              <img src="assets/eye-plus-outline.svg" alt="view" />
+              <img src="assets/share-variant.svg" alt="share" />
+            </div>
           </div>
 
           <div class="project-card">
-            <h3>Project 5</h3>
-            <p>Test</p>
+            <h3>WRC set for Rally Estonia</h3>
+            <p>Phasellus erat ligula, cursus ut eleifend commodo, faucibus ut tellus.</p>
+            <div class="interactive-card">
+              <img src="assets/star-plus.svg" alt="favourite" />
+              <img src="assets/eye-plus-outline.svg" alt="view" />
+              <img src="assets/share-variant.svg" alt="share" />
+            </div>
           </div>
 
           <div class="project-card">
-            <h3>Project 6</h3>
-            <p>Test</p>
+            <h3>Dennis regains control, as drama for Cassidy and Evans</h3>
+            <p>Mauris sed mauris ipsum. Suspendisse potenti. Nulla facilisi.</p>
+            <div class="interactive-card">
+              <img src="assets/star-plus.svg" alt="favourite" />
+              <img src="assets/eye-plus-outline.svg" alt="view" />
+              <img src="assets/share-variant.svg" alt="share" />
+            </div>
           </div>
         </div>
       </section>
 
-      <aside class="announcements">
-        <h2>Announcements</h2>
-        <div class="announcements-feed">
-          <div class="item-announcements">
-            <h4>Site Maintainence</h4>
-            <p class="text-announcement">text</p>
-          </div>
-          <hr />
-        </div>
-      </aside>
-
-      <aside class="trending">
-        <h2>Trending</h2>
-        <div class="trending-feed">
-          <div class="item-trending">
-            <img src="" alt="" />
-            <div class="trending-desc">
-              <a href="#" class="handle">@generational</a>
-              <p class="trending-bio">Some guy</p>
+      <aside class="aside">
+      <section class="announcements">
+        <h2>Rumors and gossip</h2>
+        <div class="announcements-card">
+          <div class="announcements-feed">
+            <div class="item-announcements">
+              <h4>F2 Leader headed to Peugeot?</h4>
+              <p class="text-announcement">Aaron Fox is rumored to be announced as part of Peugeot's F1 campaign. The current F2 championship leader, </p>
+            </div>
+            <hr />
+            <div class="item-announcements">
+              <h4>Site Maintainence</h4>
+              <p class="text-announcement">text</p>
+            </div>
+            <hr />
+            <div class="item-announcements">
+              <h4>Site Maintainence</h4>
+              <p class="text-announcement">text</p>
             </div>
           </div>
         </div>
-      </aside>
+      </section>
+
+      <section class="trending">
+        <h2>Trending</h2>
+        <div class="trending-card">
+          <div class="trending-feed">
+            <div class="item-trending">
+              <img src="assets/peugeot.jpg" alt="peugeot-sport" />
+              <div class="trending-desc">
+                <a href="#" class="handle">@PeugeotSport</a>
+                <p class="trending-bio">Peugeot Sport</p>
+              </div>
+            </div>
+            <div class="item-trending">
+              <img src="assets/WRT-racing-logo.png" alt="wrt-racing" />
+              <div class="trending-desc">
+                <a href="#" class="handle">@followWRT</a>
+                <p class="trending-bio">WRT - W Racing Team</p>
+              </div>
+            </div>
+            <div class="item-trending">
+              <img src="assets/therace.png" alt="the-race" />
+              <div class="trending-desc">
+                <a href="#" class="handle">@wearetherace</a>
+                <p class="trending-bio">The Race</p>
+              </div>
+            </div>
+            <div class="item-trending">
+              <img src="assets/indycar.png" alt="indycar" />
+              <div class="trending-desc">
+                <a href="#" class="handle">@IndyCar</a>
+                <p class="trending-bio">NTT INDYCAR SERIES</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </aside>
+
     </main>
   </body>
 </html>
